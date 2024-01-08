@@ -21,3 +21,5 @@ gateway/.gradle
 
 registry/build
 registry/.gradle
+notification-service/resources/mail-props.properties
+
