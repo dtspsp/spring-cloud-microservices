@@ -1,9 +1,9 @@
 package com.javastart.deposit.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -30,4 +30,11 @@ public class Deposit {
     private OffsetDateTime creationDate;
 
     private String email;
+
+    public Deposit(BigDecimal amount, Long billId, OffsetDateTime creationDate, String email) {
+        this.amount = amount;
+        this.billId = billId;
+        this.creationDate = creationDate;
+        this.email = email;
+    }
 }
